@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meal Search</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/css-fizzy-buttons/2.1.0/fizzy.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header class="bg-dark text-white py-4">
+        <div class="container">
+            <h1 class="text-center">Meal Search</h1>
+            <div class="input-group">
+                <input type="text" id="searchInput" class="form-control" placeholder="Search for a meal...">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" id="searchBtn">Search</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12" id="mealContainer">
+                <!-- Search results will be displayed here -->
+                <div class="row" id="mealRow">
+                    <!-- Cards will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3" id="showAllRow" style="display: none;">
+            <div class="col-12 text-center">
+                <button class="btn btn-secondary btn-fizzy" id="showAllBtn">SHOW ALL</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-3 mt-5">
+        <div class="container text-center">
+            &copy; 2024 Meal Search
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
