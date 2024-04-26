@@ -18,3 +18,22 @@
     display: block;
     margin-top: 10px;
 }
+
+.transform-btn {
+    transition: transform 0.3s ease;
+}
+
+.transform-btn:hover {
+    transform: scale(1.1);
+}
+
+.flip-gradient-btn {
+    background: linear-gradient(to right, #ffb6c1, #87ceeb);
+    color: #fff;
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.flip-gradient-btn:hover {
+    transform: rotateY(180deg);
+}
